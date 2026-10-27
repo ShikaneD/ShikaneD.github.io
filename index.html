@@ -3,79 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Decide Shikane | Full Stack Software Engineer</title>
+<meta name="description" content="Decide Shikane is a Full Stack Software Developer experienced in C#, .NET, React, SQL Server, APIs, insurance and financial technology.">
+<title>Decide Shikane | Full Stack Software Developer</title>
 <style>
-:root{--bg:#f6f7fb;--surface:rgba(255,255,255,.75);--solid:#fff;--text:#12151f;--muted:#586075;--a1:#4f46e5;--a2:#06b6d4;--a3:#ec4899;--border:rgba(20,25,50,.1);--chip:rgba(79,70,229,.1);--chipt:#4338ca;--shadow:0 10px 30px rgba(40,50,100,.1);
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0c14;--surface:rgba(24,28,44,.7);--solid:#161a2a;--text:#eef0f8;--muted:#a1a9c2;--a1:#818cf8;--a2:#22d3ee;--a3:#f472b6;--border:rgba(255,255,255,.1);--chip:rgba(129,140,248,.15);--chipt:#a5b4fc;--shadow:0 10px 30px rgba(0,0,0,.4);color-scheme:dark}}
+:root{--bg:#f6f7fb;--surface:rgba(255,255,255,.75);--solid:#fff;--text:#12151f;--muted:#586075;--a1:#4f46e5;--a2:#06b6d4;--a3:#ec4899;--border:rgba(20,25,50,.1);--chip:rgba(79,70,229,.1);--chipt:#4338ca;--shadow:0 10px 30px rgba(40,50,100,.1);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0c14;--surface:rgba(24,28,44,.7);--solid:#161a2a;--text:#eef0f8;--muted:#a1a9c2;--a1:#818cf8;--a2:#22d3ee;--a3:#f472b6;--border:rgba(255,255,255,.1);--chip:rgba(129,140,248,.15);--chipt:#a5b4fc;--shadow:0 10px 30px rgba(0,0,0,.4);color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#0a0c14;--surface:rgba(24,28,44,.7);--solid:#161a2a;--text:#eef0f8;--muted:#a1a9c2;--a1:#818cf8;--a2:#22d3ee;--a3:#f472b6;--border:rgba(255,255,255,.1);--chip:rgba(129,140,248,.15);--chipt:#a5b4fc;--shadow:0 10px 30px rgba(0,0,0,.4);color-scheme:dark}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
-a{color:var(--a1)}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-.blob{position:fixed;border-radius:50%;filter:blur(90px);opacity:.28;z-index:-1;animation:float 16s ease-in-out infinite}
-.b1{width:420px;height:420px;background:var(--a1);top:-120px;left:-100px}
-.b2{width:360px;height:360px;background:var(--a2);top:30%;right:-120px;animation-delay:-5s}
-.b3{width:320px;height:320px;background:var(--a3);bottom:-100px;left:20%;animation-delay:-9s}
-@keyframes float{50%{transform:translate(40px,-30px) scale(1.1)}}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;backdrop-filter:blur(14px);background:var(--surface);border-bottom:1px solid var(--border)}
-nav{display:flex;align-items:center;justify-content:space-between;height:58px;gap:12px}
-.logo{font-weight:800;font-size:1.1rem;background:linear-gradient(90deg,var(--a1),var(--a3));-webkit-background-clip:text;background-clip:text;color:transparent}
-.links{display:flex;gap:16px;overflow-x:auto;white-space:nowrap;align-items:center}
-.links a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
-.links a:hover{color:var(--a1)}
-#theme{background:none;border:1px solid var(--border);color:var(--text);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px;flex:none}
-.hero{padding:70px 0 40px;display:grid;gap:36px;grid-template-columns:1.2fr .8fr;align-items:center}
-.pill{display:inline-block;padding:5px 14px;border-radius:999px;background:var(--chip);color:var(--chipt);font-size:.85rem;font-weight:600}
-.pill i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e;margin-right:8px;animation:pulse 1.8s infinite}
-@keyframes pulse{50%{opacity:.3}}
-h1{font-size:clamp(2.4rem,7vw,4.2rem);line-height:1.05;margin:16px 0 8px;letter-spacing:-.02em}
-.grad{background:linear-gradient(90deg,var(--a1),var(--a2),var(--a3));-webkit-background-clip:text;background-clip:text;color:transparent}
-.role{font-size:clamp(1.1rem,3vw,1.5rem);font-weight:600;min-height:2em}
-.role span::after{content:"|";margin-left:2px;animation:pulse 1s infinite;color:var(--a2)}
-.lead{color:var(--muted);max-width:560px}
-.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
-.btn{padding:12px 22px;border-radius:12px;text-decoration:none;font-weight:600;border:1px solid var(--border);color:var(--text);background:var(--surface);transition:.25s}
-.btn.p{background:linear-gradient(90deg,var(--a1),var(--a3));color:#fff;border:0;box-shadow:0 8px 24px rgba(79,70,229,.35)}
-.btn:hover{transform:translateY(-3px)}
-.code{background:#0f1220;color:#d6dcff;border-radius:16px;padding:18px 20px;font:13px/1.7 ui-monospace,Menlo,Consolas,monospace;box-shadow:var(--shadow);border:1px solid var(--border);overflow-x:auto}
-.code .d{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
-.k{color:#c792ea}.t{color:#4dd0e1}.s{color:#c3e88d}.c{color:#6b7497}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:20px 0 10px}
-.stat{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px;text-align:center;backdrop-filter:blur(10px)}
-.stat b{display:block;font-size:2rem;line-height:1.1}
-.stat span{color:var(--muted);font-size:.85rem}
-section{padding:56px 0}
-.eyebrow{color:var(--a1);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem}
-h2{font-size:clamp(1.7rem,4vw,2.3rem);margin:6px 0 24px;letter-spacing:-.01em}
-.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:22px;backdrop-filter:blur(10px);box-shadow:var(--shadow);transition:.3s}
-.card:hover{transform:translateY(-6px);border-color:var(--a1)}
-.card h3{margin:0 0 6px;font-size:1.1rem}
-.card p{color:var(--muted);margin:6px 0;font-size:.95rem}
-.ico{font-size:1.7rem;display:block;margin-bottom:6px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.chip{background:var(--chip);color:var(--chipt);padding:4px 12px;border-radius:999px;font-size:.84rem;font-weight:500;transition:.2s}
-.chip:hover{background:var(--a1);color:#fff;transform:scale(1.06)}
-.tl{position:relative;padding-left:28px;border-left:2px solid var(--border);margin-left:6px}
-.job{position:relative;margin-bottom:26px}
-.job::before{content:"";position:absolute;left:-37px;top:22px;width:14px;height:14px;border-radius:50%;background:linear-gradient(var(--a1),var(--a3));box-shadow:0 0 0 5px var(--bg)}
-.job .meta{color:var(--a1);font-size:.88rem;font-weight:600;margin-bottom:6px}
-.job ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:.95rem}
-.job li{margin:5px 0}
-.ph{border-style:dashed}
-.sw{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
-.strong{display:flex;flex-wrap:wrap;gap:10px}
-.strong span{background:var(--surface);border:1px solid var(--border);padding:8px 16px;border-radius:12px;font-size:.92rem}
-.cta{text-align:center;background:linear-gradient(135deg,var(--a1),var(--a3));border-radius:24px;padding:48px 24px;color:#fff;box-shadow:0 20px 50px rgba(79,70,229,.3)}
-.cta h2{margin-top:0}.cta p{opacity:.9;max-width:520px;margin:0 auto 22px}
-.cta .btn{background:#fff;color:#2b2b6b;border:0}
-footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
-.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
-.js .rv.in{opacity:1;transform:none}
-@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:44px}.tl{padding-left:20px}.job::before{left:-29px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}a{color:var(--a1)}.wrap{max-width:1040px;margin:0 auto;padding:0 20px}.blob{position:fixed;border-radius:50%;filter:blur(90px);opacity:.28;z-index:-1;animation:float 16s ease-in-out infinite}.b1{width:420px;height:420px;background:var(--a1);top:-120px;left:-100px}.b2{width:360px;height:360px;background:var(--a2);top:30%;right:-120px;animation-delay:-5s}.b3{width:320px;height:320px;background:var(--a3);bottom:-100px;left:20%;animation-delay:-9s}@keyframes float{50%{transform:translate(40px,-30px) scale(1.1)}}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;backdrop-filter:blur(14px);background:var(--surface);border-bottom:1px solid var(--border)}nav{display:flex;align-items:center;justify-content:space-between;height:58px;gap:12px}.logo{font-weight:800;font-size:1.1rem;background:linear-gradient(90deg,var(--a1),var(--a3));-webkit-background-clip:text;background-clip:text;color:transparent}.links{display:flex;gap:16px;overflow-x:auto;white-space:nowrap;align-items:center}.links a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}.links a:hover{color:var(--a1)}#theme{background:none;border:1px solid var(--border);color:var(--text);border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:15px;flex:none}
+.hero{padding:70px 0 40px;display:grid;gap:36px;grid-template-columns:1.2fr .8fr;align-items:center}.pill{display:inline-block;padding:5px 14px;border-radius:999px;background:var(--chip);color:var(--chipt);font-size:.85rem;font-weight:600}.pill i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e;margin-right:8px;animation:pulse 1.8s infinite}@keyframes pulse{50%{opacity:.3}}h1{font-size:clamp(2.4rem,7vw,4.2rem);line-height:1.05;margin:16px 0 8px;letter-spacing:-.02em}.grad{background:linear-gradient(90deg,var(--a1),var(--a2),var(--a3));-webkit-background-clip:text;background-clip:text;color:transparent}.role{font-size:clamp(1.1rem,3vw,1.5rem);font-weight:600;min-height:1.7em}.lead{color:var(--muted);max-width:560px}.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.btn{padding:12px 22px;border-radius:12px;text-decoration:none;font-weight:600;border:1px solid var(--border);color:var(--text);background:var(--surface);transition:.25s}.btn.p{background:linear-gradient(90deg,var(--a1),var(--a3));color:#fff;border:0;box-shadow:0 8px 24px rgba(79,70,229,.35)}.btn:hover{transform:translateY(-3px)}
+.code{background:#0f1220;color:#d6dcff;border-radius:16px;padding:18px 20px;font:13px/1.7 ui-monospace,Menlo,Consolas,monospace;box-shadow:var(--shadow);border:1px solid var(--border);overflow-x:auto}.code .d{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}.k{color:#c792ea}.t{color:#4dd0e1}.s{color:#c3e88d}.c{color:#6b7497}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:20px 0 10px}.stat{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px;text-align:center;backdrop-filter:blur(10px)}.stat b{display:block;font-size:2rem;line-height:1.1}.stat span{color:var(--muted);font-size:.85rem}
+section{padding:56px 0}.eyebrow{color:var(--a1);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem}h2{font-size:clamp(1.7rem,4vw,2.3rem);margin:6px 0 24px;letter-spacing:-.01em}.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}.card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:22px;backdrop-filter:blur(10px);box-shadow:var(--shadow);transition:.3s}.card:hover{transform:translateY(-4px);border-color:var(--a1)}.card h3{margin:0 0 6px;font-size:1.1rem}.card p{color:var(--muted);margin:6px 0;font-size:.95rem}.ico{font-size:1.7rem;display:block;margin-bottom:6px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.chip{background:var(--chip);color:var(--chipt);padding:4px 12px;border-radius:999px;font-size:.84rem;font-weight:500;transition:.2s;line-height:1.5}.chip:hover{background:var(--a1);color:#fff;transform:scale(1.03)}.tl{position:relative;padding-left:28px;border-left:2px solid var(--border);margin-left:6px}.job{position:relative;margin-bottom:26px}.job::before{content:"";position:absolute;left:-37px;top:22px;width:14px;height:14px;border-radius:50%;background:linear-gradient(var(--a1),var(--a3));box-shadow:0 0 0 5px var(--bg)}.job .meta{color:var(--a1);font-size:.88rem;font-weight:600;margin-bottom:6px}.job ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:.95rem}.job li{margin:5px 0}.strong{display:flex;flex-wrap:wrap;gap:10px}.strong span{background:var(--surface);border:1px solid var(--border);padding:8px 16px;border-radius:12px;font-size:.92rem}.cta{text-align:center;background:linear-gradient(135deg,var(--a1),var(--a3));border-radius:24px;padding:48px 24px;color:#fff;box-shadow:0 20px 50px rgba(79,70,229,.3)}.cta h2{margin-top:0}.cta p{opacity:.9;max-width:580px;margin:0 auto 22px}.cta .btn{background:#fff;color:#2b2b6b;border:0}footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}.js .rv{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}.js .rv.in{opacity:1;transform:none}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:44px}.tl{padding-left:20px}.job::before{left:-29px}.links{gap:12px}.links a{font-size:13px}.code{font-size:12px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
@@ -84,126 +23,108 @@ footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
 <span class="logo">DS.dev</span>
 <div class="links"><a href="#about">About</a><a href="#services">What I do</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#contact">Contact</a><button id="theme" aria-label="Toggle theme">◐</button></div>
 </nav></div></header>
-
 <main class="wrap">
 <div class="hero">
 <div>
 <span class="pill"><i></i>Open to new opportunities</span>
 <h1>Hi, I’m <span class="grad">Decide Shikane</span></h1>
-<div class="role grad"><span id="typed">Full Stack Software Engineer</span></div>
-<p class="lead">4+ years building, testing and supporting business-critical software in insurance and fintech. I connect polished React interfaces to reliable C# and SQL back ends, and I’m exploring how AI can make everyday workflows smarter.</p>
+<div class="role grad">Full Stack Software Developer</div>
+<p style="margin:0 0 14px;font-weight:600;color:var(--muted)">C#/.NET · React · SQL Server · REST APIs · Cloud</p>
+<p class="lead">I have 4 years of experience building, testing and supporting business software across insurance and financial technology. My core strengths are C#/.NET, React, SQL Server and REST APIs, with additional hands-on experience in Java, Python, PHP, databases and cloud technologies.</p>
 <div class="btns"><a class="btn p" href="#contact">Let’s talk</a><a class="btn" href="#experience">See my experience</a><a class="btn" href="https://github.com/ShikaneD" target="_blank" rel="noopener">GitHub</a></div>
 </div>
-<div class="code" aria-hidden="true">
+<div class="code" aria-label="Developer profile summary">
 <div><span class="d" style="background:#ff5f56"></span><span class="d" style="background:#ffbd2e"></span><span class="d" style="background:#27c93f"></span></div>
 <div><span class="c">// profile.cs</span></div>
 <div><span class="k">var</span> decide = <span class="k">new</span> <span class="t">Engineer</span> {</div>
 <div>&nbsp;&nbsp;Location = <span class="s">"Pretoria, ZA"</span>,</div>
-<div>&nbsp;&nbsp;Backend = [<span class="s">"C#"</span>, <span class="s">"Java"</span>, <span class="s">"Python"</span>, <span class="s">"PHP"</span>],</div>
-<div>&nbsp;&nbsp;Frontend = [<span class="s">"React"</span>, <span class="s">"Angular"</span>],</div>
-<div>&nbsp;&nbsp;Data = [<span class="s">"SQL Server"</span>, <span class="s">"MySQL"</span>],</div>
-<div>&nbsp;&nbsp;Learning = [<span class="s">"TypeScript"</span>, <span class="s">"AI"</span>],</div>
-<div>&nbsp;&nbsp;Curious = <span class="k">true</span></div>
+<div>&nbsp;&nbsp;Core = [<span class="s">"C#/.NET"</span>, <span class="s">"React"</span>],</div>
+<div>&nbsp;&nbsp;Data = [<span class="s">"SQL Server"</span>],</div>
+<div>&nbsp;&nbsp;Messaging = <span class="s">"RabbitMQ"</span>,</div>
+<div>&nbsp;&nbsp;Interest = <span class="s">"Practical AI"</span></div>
 <div>};</div>
 </div>
 </div>
-
 <div class="stats rv">
-<div class="stat"><b class="grad" data-n="4" data-s="+">0</b><span>Years in software</span></div>
-<div class="stat"><b class="grad" data-n="2" data-s="">0</b><span>Industries: insurance &amp; fintech</span></div>
-<div class="stat"><b class="grad" data-n="10" data-s="+">0</b><span>Languages &amp; frameworks</span></div>
-<div class="stat"><b class="grad" data-n="3" data-s="">0</b><span>Database engines</span></div>
+<div class="stat"><b class="grad">4</b><span>Years in software</span></div>
+<div class="stat"><b class="grad">2</b><span>Industries: insurance &amp; fintech</span></div>
+<div class="stat"><b class="grad">3</b><span>Software roles</span></div>
 </div>
-
 <section id="about" class="rv">
 <div class="eyebrow">About me</div><h2>Practical, user-focused software</h2>
-<p>I’m a Full Stack Software Engineer based in Pretoria with 4+ years of experience building, maintaining, testing and supporting business applications across insurance and financial technology. I work across frontend development, backend services in C#, Java, Python and PHP, RESTful APIs, database integration, data science, troubleshooting and software enhancements.</p>
-<p>My strongest foundation is C#, .NET, JavaScript, React, Angular and SQL, and I’m comfortable connecting front-end interfaces to backend services in business-critical systems. I work in Agile teams, use Git and unit testing daily, and am familiar with CI/CD workflows and cloud environments.</p>
-<p>I’m passionate about exploring how AI can improve workflows, automate repetitive tasks and make complex information easier to use. I want to contribute across the frontend, backend and AI pipeline, while growing with TypeScript, Node.js, PostgreSQL, AWS and LLM-powered applications. I’m a proactive problem-solver who values continuous learning, constructive feedback, code quality and ownership of technical challenges.</p>
+<p>I’m a Full Stack Software Developer based in Pretoria with 4 years of experience across software development, maintenance, testing and technical support. I have worked in insurance and financial technology environments, contributing to business applications, API integrations, database functionality and production support.</p>
+<p>My strongest foundation is C#, .NET, ASP.NET, SQL Server, JavaScript and React, with additional experience in Angular, Java, Python, PHP, AWS and other database and cloud technologies. I enjoy connecting user interfaces to dependable backend services, investigating issues across application layers, and delivering changes that support real business needs.</p>
+<p>I have also contributed to a .NET 8 SMS messaging migration using Onion Architecture and RabbitMQ. Outside my day-to-day work, I build personal projects and explore how AI can make workflows more useful. I value readable code, careful testing, collaboration, continuous learning and taking ownership of technical problems.</p>
 </section>
-
 <section id="services">
 <div class="eyebrow rv">What I do</div><h2 class="rv">From interface to database</h2>
 <div class="grid">
-<div class="card rv"><span class="ico">🎨</span><h3>Frontend development</h3><p>Responsive, user-friendly web interfaces in React, Angular, JavaScript and HTML/CSS, built from UX/UI wireframes.</p></div>
-<div class="card rv"><span class="ico">⚙️</span><h3>Backend &amp; APIs</h3><p>Robust services and RESTful APIs in C# and ASP.NET, documented and tested with Swagger, with Java, Python and PHP in the toolbox.</p></div>
-<div class="card rv"><span class="ico">🗄️</span><h3>Databases</h3><p>Optimised SQL and PL/SQL across SQL Server, MySQL and MongoDB, plus JSON and XML data exchange between systems.</p></div>
-<div class="card rv"><span class="ico">🛠️</span><h3>Production support</h3><p>Analysing and resolving software errors, supporting live systems and keeping business users productive.</p></div>
-<div class="card rv"><span class="ico">📊</span><h3>Data science &amp; AI</h3><p>Python-based data analysis and machine learning, and a growing focus on LLM-powered tools that automate repetitive work.</p></div>
-<div class="card rv"><span class="ico">☁️</span><h3>Cloud &amp; delivery</h3><p>Deploying to AWS with scalability and security in mind, working in CI/CD pipelines, Agile sprints and code reviews.</p></div>
+<div class="card rv"><span class="ico">🎨</span><h3>Frontend development</h3><p>Build and maintain user-friendly web interfaces with React, Angular, JavaScript, HTML and CSS, connecting interface behaviour to application requirements.</p></div>
+<div class="card rv"><span class="ico">⚙️</span><h3>Backend &amp; APIs</h3><p>Develop and maintain backend functionality using C#, .NET and ASP.NET, including REST API integration, troubleshooting and API documentation with Swagger.</p></div>
+<div class="card rv"><span class="ico">🗄️</span><h3>Databases &amp; integration</h3><p>Work with SQL and database-driven applications across SQL Server, MySQL and MongoDB, and exchange data using JSON and XML.</p></div>
+<div class="card rv"><span class="ico">🛠️</span><h3>Testing &amp; production support</h3><p>Investigate software errors, debug application and database issues, test changes and help keep business-critical systems reliable.</p></div>
+<div class="card rv"><span class="ico">📊</span><h3>Data, Python &amp; AI</h3><p>Python and data analysis, alongside a growing interest in practical AI and LLM-powered applications.</p></div>
+<div class="card rv"><span class="ico">☁️</span><h3>Cloud &amp; delivery</h3><p>Hands-on experience with AWS and Azure services, source control, CI/CD workflows, Agile delivery and code reviews.</p></div>
 </div>
 </section>
-
 <section id="skills">
 <div class="eyebrow rv">Toolbox</div><h2 class="rv">Skills &amp; technologies</h2>
 <div class="grid">
-<div class="card rv"><h3>Backend</h3><div class="chips"><span class="chip">C#</span><span class="chip">.NET</span><span class="chip">ASP.NET</span><span class="chip">Web API</span><span class="chip">RESTful APIs</span><span class="chip">Java</span><span class="chip">Python</span><span class="chip">PHP</span></div></div>
-<div class="card rv"><h3>Frontend</h3><div class="chips"><span class="chip">React</span><span class="chip">Angular</span><span class="chip">JavaScript</span><span class="chip">jQuery</span><span class="chip">HTML/CSS</span><span class="chip">Figma</span></div></div>
-<div class="card rv"><h3>Databases</h3><div class="chips"><span class="chip">SQL Server</span><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">Oracle</span><span class="chip">PL/SQL</span><span class="chip">JSON</span><span class="chip">XML</span></div></div>
-<div class="card rv"><h3>Data science</h3><div class="chips"><span class="chip">Python</span><span class="chip">Data analysis</span><span class="chip">Machine learning</span><span class="chip">Data visualisation</span></div></div>
-<div class="card rv"><h3>Practices &amp; tools</h3><div class="chips"><span class="chip">Agile / Scrum</span><span class="chip">Git</span><span class="chip">Unit testing</span><span class="chip">Code reviews</span><span class="chip">CI/CD</span><span class="chip">Swagger</span><span class="chip">Jira</span><span class="chip">AWS</span></div></div>
-<div class="card rv"><h3>Currently exploring</h3><div class="chips"><span class="chip">TypeScript</span><span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">LLM applications</span></div></div>
+<div class="card rv"><h3>Core skills</h3><p>Technologies central to my full-stack development experience.</p><div class="chips"><span class="chip">C#</span><span class="chip">.NET / .NET Framework 4.8</span><span class="chip">ASP.NET MVC</span><span class="chip">ASP.NET Web API</span><span class="chip">SQL Server / T-SQL</span><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">Angular</span><span class="chip">REST APIs</span><span class="chip">Git</span></div></div>
+<div class="card rv"><h3>Additional hands-on experience</h3><p>Used in professional or personal development contexts.</p><div class="chips"><span class="chip">Azure DevOps</span><span class="chip">Azure App Services</span><span class="chip">AWS</span><span class="chip">RabbitMQ</span><span class="chip">Onion Architecture</span><span class="chip">NUnit</span><span class="chip">AutoMapper</span><span class="chip">FluentValidation</span><span class="chip">LiteBus</span><span class="chip">WPF / XAML / MVVM</span><span class="chip">Swagger / OpenAPI</span><span class="chip">JSON / XML</span><span class="chip">Docker</span><span class="chip">CI/CD</span></div></div>
+<div class="card rv"><h3>Also familiar with</h3><div class="chips"><span class="chip">Java</span><span class="chip">Python</span><span class="chip">PHP</span><span class="chip">Oracle / PL/SQL</span><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">TypeScript</span><span class="chip">jQuery</span><span class="chip">Figma</span><span class="chip">Jira</span><span class="chip">Agile / Scrum</span><span class="chip">Code reviews</span></div></div>
+<div class="card rv"><h3>Currently exploring</h3><p>Areas I’m looking to deepen through projects and continued learning.</p><div class="chips"><span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">LLM applications</span><span class="chip">AI-assisted workflows</span><span class="chip">Software architecture</span></div></div>
 </div>
 </section>
-
 <section id="experience">
 <div class="eyebrow rv">Career</div><h2 class="rv">Experience</h2>
 <div class="tl">
-<div class="job card rv"><h3>Junior Developer (C# &amp; SQL), Direct Transact</h3><div class="meta">Jun 2026 – Sep 2026 · Fintech: banking and payments as a service · Menlyn Maine, Pretoria</div>
-<ul><li>Provided production support on a financial payments platform, analysing and resolving software errors.</li><li>Developed and tested C# .NET Core and SQL Server components.</li><li>Documented business rules and key decisions so the wider team could rely on them.</li><li>Collaborated on software enhancements and suggested system improvements.</li></ul></div>
-<div class="job card rv"><h3>Junior Software Developer, Brolink (Pty) Ltd</h3><div class="meta">Feb 2023 – [end date] · Insurance &amp; fintech</div>
-<ul><li>Built user-friendly web interfaces with HTML, JavaScript and React, turning UX/UI wireframes into functional pages.</li><li>Developed and maintained backend services and RESTful APIs in C# and ASP.NET, documented and tested with Swagger.</li><li>Ensured seamless integration between front-end and back-end components.</li><li>Wrote and optimised SQL and PL/SQL for efficient data retrieval across SQL Server, MySQL and MongoDB.</li><li>Exchanged data between systems in JSON and XML formats.</li><li>Deployed and managed applications on AWS with a focus on scalability, security and reliability.</li><li>Worked in Agile sprints (planning, stand-ups, retrospectives) using Jira, Git and Figma, and took part in code reviews.</li><li>Maintained documentation for code, APIs and system designs.</li></ul></div>
-<div class="job card rv"><h3>Software Development Intern, NKWENTE IT Solutions</h3><div class="meta">Jul 2022 – Jan 2023</div>
-<ul><li>Worked across the software development lifecycle, from planning to deployment and maintenance.</li><li>Configured and developed strategic innovation projects using PL/SQL, SQL, Groovy and JSON for database integration.</li><li>Provided ongoing system support, resolving issues and keeping performance optimal.</li><li>Liaised with users to gather functional specifications and supported day-to-day queries from business users and IT teams.</li><li>Used Git, wrote tests, debugged issues and wrote clear documentation.</li><li>Applied security best practices and contributed to user-friendly UI/UX.</li></ul></div>
-<div class="job card rv"><h3>Technical Support Engineer (Intern), Eskom Holdings SOC Ltd</h3><div class="meta">Jan 2022 – Jun 2022</div>
-<ul><li>Delivered first-line network and hardware support across multiple sites.</li><li>Created bootable memory sticks and deployed images from servers.</li><li>Configured and deployed software using TSSG and SCCM, and verified configurations against the image checklist (including McAfee).</li><li>Installed software, joined machines to the domain, and handled printer support, call logging and remote desktop assistance.</li></ul></div>
+<div class="job card rv"><h3>Intermediate Developer (C# &amp; SQL), Direct Transact</h3><div class="meta">Jun 2026 – Sep 2026 · Fintech: banking and payments as a service · Menlyn Maine, Pretoria</div>
+<ul><li>Worked on a financial technology platform, contributing to application development, maintenance and production support.</li><li>Used Visual Studio 2022, C#, .NET Framework 4.8, ASP.NET MVC and SQL Server in development and support tasks.</li><li>Investigated software errors and application/database issues, tested changes and supported corrective fixes.</li><li>Used NUnit for database-related testing.</li><li>Contributed to migrating SMS messaging functionality to .NET 8 using Onion Architecture, LiteBus, AutoMapper, FluentValidation and RabbitMQ.</li><li>Collaborated with colleagues on troubleshooting, validation and improvements to business-critical financial software.</li></ul></div>
+<div class="job card rv"><h3>Junior Software Developer, Brolink (Pty) Ltd</h3><div class="meta">Feb 2023 – May 2026 · Insurance software</div>
+<ul><li>Contributed to full-stack development on the Astute Application, an insurance platform serving financial advisers and clients, as part of a six-person development team.</li><li>Worked with C#, .NET, ASP.NET, SQL Server, React and JavaScript to support application functionality and enhancements.</li><li>Developed and maintained in-house business application features, connecting frontend interfaces with backend logic and database functionality.</li><li>Worked on an in-house call-centre system using C#, ASP.NET, Microsoft SQL Server, HTML, JavaScript and jQuery.</li><li>Supported API and system integration work, including REST-style services and data exchange using JSON and XML.</li><li>Wrote and maintained SQL queries and database logic, and investigated issues across application and database layers.</li><li>Worked with WPF, XAML, MVVM and data binding in desktop application contexts.</li><li>Used Git workflows and participated in Agile team delivery, peer reviews, testing, debugging and technical documentation.</li><li>Gained professional experience with cloud and delivery workflows, including AWS and Azure-related technologies.</li></ul></div>
+<div class="job card rv"><h3>Software Development Intern, Nkwente IT Solutions</h3><div class="meta">Jul 2022 – Jan 2023</div>
+<ul><li>Supported software development lifecycle activities, from requirements clarification and implementation through testing, maintenance and documentation.</li><li>Worked with SQL, PL/SQL, Groovy and JSON for database integration and data-related tasks.</li><li>Helped configure and develop strategic innovation projects and contributed to user-interface improvements.</li><li>Liaised with users to gather functional specifications and supported day-to-day queries from business users and IT teams.</li><li>Used version control, debugged issues, wrote tests and collaborated with team members to resolve application problems.</li></ul></div>
+<div class="job card rv"><h3>Technical Support Engineer Intern, Eskom Holdings SOC Ltd</h3><div class="meta">Jan 2022 – Jun 2022</div>
+<ul><li>Delivered first-line network, hardware and software support across multiple sites.</li><li>Created bootable USB drives and assisted with deploying workstation images from servers.</li><li>Configured and deployed software using TSSG and SCCM, and checked configurations against image checklists, including McAfee.</li><li>Installed software, joined machines to the domain, and handled printer support, call logging and remote desktop assistance.</li></ul></div>
 </div>
 </section>
-
 <section id="education">
 <div class="eyebrow rv">Learning</div><h2 class="rv">Education</h2>
-<div class="card rv" style="margin-bottom:16px"><h3>Advanced Diploma in Computer Science</h3><p>Tshwane University of Technology · 2024 – Present (currently on hold)</p></div>
-<div class="card rv" style="margin-bottom:16px"><h3>National Diploma in Information Technology: Software Development</h3><p>Tshwane University of Technology · 2019 – 2022</p>
-<div class="chips"><span class="chip">Database programming (SQL, PL/SQL, MySQL, MS Access, Oracle)</span><span class="chip">C++ &amp; C#</span><span class="chip">Systems analysis &amp; design</span><span class="chip">Operating systems (Windows, Linux)</span><span class="chip">Software &amp; hardware maintenance</span><span class="chip">Network management</span></div></div>
-<div class="card rv"><h3>Matric (2018)</h3><p>Mbhandule Senior Secondary School · Admission to Bachelor’s degree</p></div>
+<div class="card rv" style="margin-bottom:16px"><h3>Advanced Diploma in Computer Science</h3><p>Tshwane University of Technology · 2024 – Present · Currently on hold</p></div>
+<div class="card rv" style="margin-bottom:16px"><h3>National Diploma in Information Technology: Software Development</h3><p>Tshwane University of Technology · 2019 – 2022</p><div class="chips"><span class="chip">Database programming</span><span class="chip">SQL / PL/SQL / MySQL / Oracle</span><span class="chip">C++ &amp; C#</span><span class="chip">Systems analysis &amp; design</span><span class="chip">Windows &amp; Linux</span><span class="chip">Software &amp; hardware maintenance</span><span class="chip">Network management</span></div></div>
+<div class="card rv"><h3>Matric</h3><p>Mbhandule Senior Secondary School · 2018 · Admission to Bachelor’s degree</p></div>
 </section>
-
 <section id="strengths">
 <div class="eyebrow rv">How I work</div><h2 class="rv">Strengths</h2>
-<div class="strong rv"><span>🧠 Analytical thinking</span><span>🔍 Attention to detail</span><span>💬 Clear communication</span><span>🎯 Results oriented</span><span>🧩 Problem solving</span><span>⚖️ Decision-making</span><span>🤝 Teamwork</span><span>🚀 Proactivity</span><span>🧘 Stress tolerance</span><span>✅ High quality standards</span><span>🛎️ Customer service</span></div>
+<div class="strong rv"><span>🧠 Analytical thinking</span><span>🔍 Attention to detail</span><span>💬 Clear communication</span><span>🎯 Results oriented</span><span>🧩 Problem solving</span><span>⚖️ Decision-making</span><span>🤝 Teamwork</span><span>🚀 Proactivity</span><span>✅ Quality focused</span><span>🛎️ User support</span><span>📚 Continuous learning</span></div>
 </section>
-
 <section id="projects">
-<div class="eyebrow rv">Work</div><h2 class="rv">Selected projects</h2>
+<div class="eyebrow rv">Work</div><h2 class="rv">Personal projects</h2>
 <div class="grid">
-<div class="card rv"><span class="ico">💳</span><h3>Spending Insights Dashboard</h3><p>A responsive customer spending dashboard with accessible charts, independent loading and error states per section, and Zod-validated API responses. The mocked REST API (MSW) covers 7 endpoints and can be swapped for a real backend. Includes tests, Docker and a CI pipeline.</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Vite</span><span class="chip">Zod</span><span class="chip">Docker</span><span class="chip">CI</span></div><p><a href="https://github.com/ShikaneD/spending-insights-dashboard" target="_blank" rel="noopener">View on GitHub →</a></p></div>
-<div class="card rv"><span class="ico">🏫</span><h3>Smart Campus</h3><p>[One line on what Smart Campus does and your role.]</p><div class="chips"><span class="chip">[Tech stack]</span></div><p><a href="https://github.com/ShikaneD/smart-campus" target="_blank" rel="noopener">View on GitHub →</a></p></div>
-
+<div class="card rv"><span class="ico">💳</span><h3>Customer Spending Insights Dashboard</h3><p>A responsive spending dashboard built with React and TypeScript. It features accessible charts, independent loading and error states per section, and Zod-validated responses. The mocked REST API uses MSW across seven endpoints and can be replaced with a real backend. Includes tests, linting, Docker configuration and a CI pipeline.</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Vite</span><span class="chip">Zod</span><span class="chip">MSW</span><span class="chip">Docker</span><span class="chip">CI</span></div><p><a href="https://github.com/ShikaneD/spending-insights-dashboard" target="_blank" rel="noopener">View on GitHub →</a></p></div>
+<div class="card rv"><span class="ico">🏫</span><h3>Smart Campus</h3><p>A campus application where students can book appointments with lecturers and view their lecture timetables.</p><p><a href="https://github.com/ShikaneD/smart-campus" target="_blank" rel="noopener">View on GitHub →</a></p></div>
 </div>
 </section>
-
 <section id="contact">
-<div class="cta rv"><h2>Let’s build something useful</h2><p>I’m looking for a full stack or backend role where I can ship, support and improve real software. Say hello.</p>
-<div class="btns" style="justify-content:center"><a class="btn" href="mailto:shikanedecide@gmail.com">✉️ shikanedecide@gmail.com</a><a class="btn" href="tel:+27728850220">📞 072 885 0220</a><a class="btn" href="tel:+27695201061">📞 069 520 1061</a><a class="btn" href="https://github.com/ShikaneD" target="_blank" rel="noopener">GitHub</a></div></div>
+<div class="cta rv"><h2>Let’s build something useful</h2><p>I’m looking for a full-stack or backend software development role where I can contribute, support and improve real systems. If you’re working on a useful problem, I’d be happy to connect.</p>
+<div class="btns" style="justify-content:center"><a class="btn" href="mailto:shikanedecide@gmail.com">✉️ shikanedecide@gmail.com</a><a class="btn" href="tel:+27695201061">📞 069 520 1061</a><a class="btn" href="tel:+27728850220">📞 072 885 0220</a><a class="btn" href="https://github.com/ShikaneD" target="_blank" rel="noopener">GitHub</a></div></div>
 </section>
 </main>
 <footer>© Decide Shikane · Pretoria, South Africa</footer>
-
 <script>
 document.documentElement.classList.add('js');
 (function(){
-var r=document.documentElement;
-try{var t=localStorage.getItem('theme');if(t)r.setAttribute('data-theme',t)}catch(e){}
-document.getElementById('theme').onclick=function(){
-var dark=r.getAttribute('data-theme')?r.getAttribute('data-theme')==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
-var n=dark?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}};
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');
-e.target.querySelectorAll&&e.target.querySelectorAll('[data-n]').forEach(count);io.unobserve(e.target)}})},{threshold:.12});
-document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
-function count(el){var n=+el.dataset.n,i=0,s=el.dataset.s;var id=setInterval(function(){i++;el.textContent=i+(i>=n?s:'');if(i>=n)clearInterval(id)},120)}
-var roles=['Full Stack Software Engineer','C# & .NET Developer','React & Angular Developer','SQL & Data Enthusiast','AI-curious Problem Solver'],ri=0,ci=0,del=false,el=document.getElementById('typed');
-if(!matchMedia('(prefers-reduced-motion:reduce)').matches){(function tick(){var w=roles[ri];ci+=del?-1:1;el.textContent=w.slice(0,ci);
-var d=del?35:70;if(!del&&ci===w.length){del=true;d=1600}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;d=300}setTimeout(tick,d)})()}
+ var root=document.documentElement;
+ try{var theme=localStorage.getItem('theme');if(theme)root.setAttribute('data-theme',theme)}catch(e){}
+ document.getElementById('theme').addEventListener('click',function(){
+  var dark=root.getAttribute('data-theme')?root.getAttribute('data-theme')==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var next=dark?'light':'dark';root.setAttribute('data-theme',next);try{localStorage.setItem('theme',next)}catch(e){}
+ });
+ if('IntersectionObserver' in window){
+  var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('in');observer.unobserve(entry.target)}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){observer.observe(el)});
+ }else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
 })();
 </script>
 </body>
